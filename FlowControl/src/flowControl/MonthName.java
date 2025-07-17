@@ -1,23 +1,31 @@
 package flowControl;
 
 public class MonthName {
-	public String monthCode(int num) {
+	public static void main(String[] args) {
+		int sum=0;
 		String month = "";
-		switch(num) {
-		case 1: month="January";
-		case 2: month="February";
-		case 3: month="March";
-		case 4: month="April";
-		case 5: month="May";
-		case 6: month="June";
-		case 7: month="July";
-		case 8: month="August";
-		case 9: month="September";
-		case 10: month="October";
-		case 11: month="November";
-		case 12: month="Decembe";
-		default: month="Invalid";
+		if(args.length>0) {
+			for(int i=0;i<args.length;i++) {
+				sum+=Integer.parseInt(args[i]);
+			}
+			switch(sum) {
+			case 1: month="Jan"; break;
+			case 2: month="Feb"; break;
+			case 3: month="Mar"; break;
+			case 4: month="Apr"; break;
+			case 5: month="May"; break;
+			case 6: month="Jun"; break;
+			case 7: month="Jul"; break;
+			case 8: month="Aug"; break;
+			case 9: month="Sep"; break;
+			case 10: month="Oct"; break;
+			case 11: month="Nov"; break;
+			case 12: month="Dec"; break;
+			}
 		}
-		return month;
+		else {
+			System.out.println("Enter a argument!");
+		}
+		
 	}
 }

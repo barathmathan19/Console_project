@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: "Poppins", sans-serif;
+            height: 100vh;
+            background: #e4e9ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Background blobs */
+        .blob{
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(135deg, #39a9ff, #377dff);
+            border-radius: 50%;
+            filter: blur(2px);
+            z-index: -1;
+        }
+
+        .blob.left{
+            left: -150px;
+            bottom: -120px;
+        }
+
+        .blob.right{
+            right: -130px;
+            top: -120px;
+        }
+
+        /* Card */
+        .login-card{
+            background: #ffffff;
+            width: 420px;
+            padding: 40px 50px 30px;
+            border-radius: 30px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+
+
+        .title{
+            font-size: 26px;
+            font-weight: 600;
+            color: #5a4ad1;
+            margin-bottom: 5px;
+        }
+
+        .subtitle{
+            font-size: 13px;
+            color: #9a9a9a;
+            margin-bottom: 30px;
+        }
+
+        .field-label{
+            font-size: 13px;
+            color: #9a9a9a;
+            margin-top: 15px;
+        }
+
+        .input-line{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 8px 0;
+            margin-top: 3px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .input-line:focus{
+            border-bottom-color: #7c6cff;
+        }
+
+        .login-btn{
+            margin-top: 30px;
+            width: 140px;
+            padding: 9px 0;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 14px;
+            color: #fff;
+            background: linear-gradient(90deg, #4b6cff, #1fb1ff);
+        }
+
+        .links-row{
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            margin-top: 25px;
+        }
+
+        .links-row a{
+            text-decoration: none;
+            color: #7c6cff;
+        }
+
+        @media (max-width: 480px){
+            .login-card{
+                width: 90%;
+                padding: 30px 25px 25px;
+            }
+        }
+
+        .register-btn{
+            margin-top: 30px;
+            width: 140px;
+            padding: 9px 0;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 14px;
+            color: #fff;
+            background: linear-gradient(90deg, #4b6cff, #1fb1ff);
+        }
+    </style>
+</head>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <form action="login" method="post">
+        <label>Email: </label>
+        <input type="email" name="email"><br><br>
+
+        <label>Password: </label>
+        <input type="password" name="password"><br><br>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <p>New user? <a href="register.html">Register here</a></p>
+</body>
+</html>

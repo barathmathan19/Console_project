@@ -9,6 +9,15 @@ public class Main {
 	 
 	 ResortReservation resort = new ResortReservation("R001","Barath",LocalDate.now(),101);
 	 resort.checkReservationStatus();
+	 System.out.println();
 	 
+	 rail.modifyReservation("binushya", LocalDate.of(2025, 11, 18));
+	 rail.checkReservationStatus();
+	 System.out.println();
+	 
+	 resort.modifyReservation("binushya", LocalDate.of(2025, 11, 18));
+	 
+	 
+	 resort.checkReservationStatus();
   }
 } 
